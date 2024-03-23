@@ -24,7 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.15"
-            app:srcCompat="@drawable/akemi_018_teeth" />
+            app:srcCompat="@drawable/shl_logo_trans" />
 
         <TextView
             android:id="@+id/textView2"

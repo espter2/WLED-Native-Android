@@ -70,7 +70,7 @@ class DeviceEditFragment : Fragment() {
             checkForUpdate()
         }
         binding.buttonUpdate.setOnClickListener {
-            showUpdateDialog()
+
         }
         binding.branchToggleButtonGroup.addOnButtonCheckedListener { _, _, isChecked ->
             if (!isChecked) {
@@ -171,25 +171,7 @@ class DeviceEditFragment : Fragment() {
             binding.hideDeviceCheckBox.isChecked = deviceEditViewModel.hideDevice
             binding.branchToggleButtonGroup.check(deviceEditViewModel.getViewIdForCurrentBranch())
         }
-        updateUpdateCardVisibility()
-        updateUpdateFields()
 
-
-        firstLoad = false
-    }
-
-    private fun updateUpdateFields() {
-        val deltaSinceUpdateStart = System.currentTimeMillis() - deviceEditViewModel.updateCheckStartTime
-        // If the check for update was really really fast, make it feel slower for a better UX.
-        // It's strange, but if it's too fast, it feels like the button did nothing and people might
-        // spam it.
-        if (binding.progressCheckForUpdate.visibility == View.VISIBLE && deltaSinceUpdateStart < MIN_UPDATE_CHECK_TIME) {
-            Log.i(TAG, "Delaying update UI refresh.")
-            Handler(Looper.getMainLooper()).postDelayed({
-                updateUpdateFields()
-            }, MIN_UPDATE_CHECK_TIME)
-            return
-        }
         // deviceEditViewModel.updateCheckStartTime
         binding.labelCurrentVersion.text =
             getString(R.string.version_v_num, deviceEditViewModel.device.version)
@@ -261,16 +243,13 @@ class DeviceEditFragment : Fragment() {
         }
     }
 
-    private fun showUpdateDialog() {
-        val fragmentManager = requireActivity().supportFragmentManager
-        val isLargeLayout = resources.getBoolean(R.bool.large_layout)
-    }
+
 
     companion object {
         private const val TAG = "DeviceEditFragment"
         private const val DEVICE_ADDRESS = "device_address"
 
-        private const val MIN_UPDATE_CHECK_TIME = 2000L
+
 
         @JvmStatic
         fun newInstance(deviceAddress: String) = DeviceEditFragment().apply {
