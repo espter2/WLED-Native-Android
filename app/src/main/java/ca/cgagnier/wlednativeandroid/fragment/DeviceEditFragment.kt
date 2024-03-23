@@ -264,8 +264,6 @@ class DeviceEditFragment : Fragment() {
     private fun showUpdateDialog() {
         val fragmentManager = requireActivity().supportFragmentManager
         val isLargeLayout = resources.getBoolean(R.bool.large_layout)
-        val newFragment = DeviceUpdateAvailableFragment.newInstance(deviceAddress, isLargeLayout)
-        newFragment.show(fragmentManager, "dialog")
     }
 
     companion object {

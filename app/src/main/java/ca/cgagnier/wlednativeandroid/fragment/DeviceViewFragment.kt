@@ -355,10 +355,7 @@ class DeviceViewFragment : Fragment() {
                         true
                     }
 
-                    R.id.action_browse_update -> {
-                        showUpdateDialog()
-                        true
-                    }
+
 
                     R.id.action_manage_device -> {
                         showEditDevice()
@@ -408,13 +405,7 @@ class DeviceViewFragment : Fragment() {
         deviceViewViewModel.loadingCounter++
     }
 
-    fun showUpdateDialog() {
-        val fragmentManager = requireActivity().supportFragmentManager
-        val deviceAddress = device.address
-        val newFragment =
-            DeviceUpdateAvailableFragment.newInstance(deviceAddress, isLargeLayout)
-        newFragment.show(fragmentManager, "dialog")
-    }
+
 
     fun showEditDevice() {
         val intent = Intent(requireActivity(), DeviceEditActivity::class.java)
