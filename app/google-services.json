@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "213779048662",
-    "project_id": "api-7500504901490971999-992284",
-    "storage_bucket": "api-7500504901490971999-992284.appspot.com"
+    "project_number": "524462372392",
+    "project_id": "ca-svickery-shlandriod",
+    "storage_bucket": "ca-svickery-shlandriod.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:213779048662:android:d7af49b3591427d5fd0177",
+        "mobilesdk_app_id": "1:524462372392:android:6e4537c487275a6d76a71d",
         "android_client_info": {
-          "package_name": "ca.cgagnier.wlednativeandroid"
+          "package_name": "ca.svickery.shlandriod"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "213779048662-7ui3cg3qrbl85qtth7oc00s5lpr6s9ac.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCPAwtNLAQb0g7r3guQloAkboOHnaq1gOo"
+          "current_key": "AIzaSyCNnoYflVQJ1qi_qWNrByG5y6AkJaA7_W4"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "213779048662-7ui3cg3qrbl85qtth7oc00s5lpr6s9ac.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
