@@ -278,6 +278,11 @@ class DeviceListFragment : Fragment(),
                     val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://showhomelighting.com/pages/app-install-manual"))
                     startActivity(browserIntent)
                 }
+                // track setup guide
+                R.id.action_track_install_manual -> {
+                    val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://showhomelighting.com/pages/manual"))
+                    startActivity(browserIntent)
+                }
             }
             drawerLayout.close()
             true

@@ -95,4 +95,6 @@
     <string name="help">WLED Help</string>
     <string name="support_me">Support Moustachauve</string>
     <string name="app_setup_guide" translatable="false">App Setup Guide</string>
+    <string name="track_install_manual" translatable="false">Track Install Manual</string>
+"
 </resources>

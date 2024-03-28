@@ -31,5 +31,10 @@
             android:id="@+id/action_app_setup_guide"
             android:icon="@drawable/baseline_download_24"
             android:title="@string/app_setup_guide" />
+        <item
+            android:id="@+id/action_track_install_manual"
+            android:icon="@drawable/baseline_download_24"
+            android:title="@string/track_install_manual" />
+
     </group>
 </menu>
