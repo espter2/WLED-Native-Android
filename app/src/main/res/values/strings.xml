@@ -94,4 +94,5 @@
     <string name="downloading_file">Downloading File</string>
     <string name="help">WLED Help</string>
     <string name="support_me">Support Moustachauve</string>
+    <string name="app_setup_guide" translatable="false">App Setup Guide</string>
 </resources>

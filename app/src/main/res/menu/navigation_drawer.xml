@@ -27,5 +27,9 @@
             android:id="@+id/action_visit_sponsor"
             android:icon="@drawable/baseline_coffee_24"
             android:title="@string/support_me" />
+        <item
+            android:id="@+id/action_app_setup_guide"
+            android:icon="@drawable/baseline_download_24"
+            android:title="@string/app_setup_guide" />
     </group>
 </menu>

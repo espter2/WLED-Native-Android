@@ -264,16 +264,18 @@ class DeviceListFragment : Fragment(),
                 }
 
                 R.id.action_visit_help -> {
-                    val browserIntent =
-                        Intent(Intent.ACTION_VIEW, Uri.parse("https://kno.wled.ge/"))
+                    val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://kno.wled.ge/"))
                     startActivity(browserIntent)
                 }
 
                 R.id.action_visit_sponsor -> {
-                    val browserIntent = Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://github.com/sponsors/Moustachauve/")
-                    )
+                    val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/sponsors/Moustachauve/"))
+                    startActivity(browserIntent)
+                }
+
+                // New case for the App Setup Guide
+                R.id.action_app_setup_guide -> {
+                    val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://showhomelighting.com/pages/app-install-manual"))
                     startActivity(browserIntent)
                 }
             }
@@ -281,6 +283,7 @@ class DeviceListFragment : Fragment(),
             true
         }
     }
+
 
     private fun openAddDeviceFragment() {
         val newDialog = DeviceAddManuallyFragment()
