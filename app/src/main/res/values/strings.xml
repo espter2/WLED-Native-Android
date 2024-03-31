@@ -1,5 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" translatable="false">WLED Native</string>
+    <string name="app_name" translatable="false">SHL</string>
     <string name="app_logo">WLED Logo</string>
     <string name="add_a_device">Add a Device</string>
     <string name="looking_for_devices">Discovering Devices</string>
