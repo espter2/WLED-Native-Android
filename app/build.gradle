@@ -17,8 +17,8 @@ android {
         applicationId "ca.svickery.shlandriod"
         minSdk 24
         targetSdk 34
-        versionCode 33
-        versionName "4.1.1"
+        versionCode 34
+        versionName "4.1.2"
         resourceConfigurations += ['en', 'fr']
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
